@@ -67,7 +67,6 @@ body {
 
 @media screen and (max-width: 480px) {
   .conteiner {
-    display: flex;
     width: 100%;
     padding-left: 15px;
     padding-right: 15px;
@@ -92,13 +91,11 @@ body {
 }
 @media screen and (max-width: 768px) {
   .mobile-menu {
-    display: flex;
-    flex-direction: column;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 25;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-color: bisque;
   }
@@ -110,7 +107,7 @@ body {
     position: absolute;
     height: 40px;
     top: 10px;
-    right: 10px;
+    right: 15px;
   }
   .mobile-menu-close-button__icon {
     width: 40px;
@@ -118,6 +115,11 @@ body {
   }
   .mobile-menu-close-button__icon:hover {
     fill: var(--accent-color);
+  }
+  .mobile-menu__conteiner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
   }
   .mobile-menu-navigation {
     display: flex;
@@ -140,12 +142,10 @@ body {
   .mobile-menu-contacts {
     display: flex;
     flex-direction: column;
+    gap: 32px;
     margin-top: auto;
     margin-left: 25px;
     margin-bottom: 64px;
-  }
-  .mobile-menu-contacts__item + .mobile-menu-contacts__item {
-    margin-top: 32px;
   }
   .mobile-menu-contacts__phone {
     font-weight: 500;
@@ -164,7 +164,7 @@ body {
   .mobile-menu-socisl-link-list {
     display: flex;
     margin-left: 25px;
-    margin-bottom: 64px;
+    margin-bottom: 48px;
   }
   .mobile-menu-socisl-link-list__item {
     padding: 0 10px;
@@ -295,11 +295,11 @@ body {
     color: var(--primery-text-color);
     fill: var(--primery-text-color);
   }
-  .contacts__link__icon {
+  .contacts__icon {
     margin-right: 10px;
     fill: currentColor;
   }
-  .contacts__link__item + .contacts__link__item {
+  .contacts__item + .contacts__item {
     margin-top: 10px;
   }
 }

@@ -1,13 +1,13 @@
 @media screen and (max-width: 768px) {
 
   .mobile-menu {
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 25;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-color: bisque;
 
@@ -19,7 +19,7 @@
       position: absolute;
       height: 40px;
       top: 10px;
-      right: 10px;
+      right: 15px;
 
       &__icon {
         width: 40px;
@@ -30,6 +30,12 @@
         }
       }
     }
+  }
+
+  .mobile-menu__conteiner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
   }
 
   .mobile-menu-navigation {
@@ -56,15 +62,12 @@
   .mobile-menu-contacts {
     display: flex;
     flex-direction: column;
+    gap: 32px;
     margin-top: auto;
     margin-left: 25px;
     margin-bottom: 64px;
 
-    &__item + &__item {
-       margin-top: 32px; 
-    }
-
-    &__phone {
+      &__phone {
       font-weight: 500;
       font-size: 34px;
       line-height: 40px;    
@@ -84,7 +87,7 @@
   .mobile-menu-socisl-link-list {
     display: flex;
     margin-left: 25px;
-    margin-bottom: 64px;
+    margin-bottom: 48px;
     
     &__item {
       padding: 0 10px;
