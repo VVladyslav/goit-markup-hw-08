@@ -1,18 +1,60 @@
 .motto {
-  max-width: 1600px;
+  max-width: 480px;
   margin: 0 auto;
-  padding: 200px 0;
+  padding: 118px 0;
   background-color: #2F303A;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_dack.jpg);
+  background-position: center top;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero_dack_mob@1x.jpg);
+
+  &-text {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-color-white);
+    margin-bottom: 30px;
+  }
+
+}
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 768px), (min-resolution: 192dpi) and (max-width: 768px) {
+  .motto {
+    background-image: url(../../images/hero_dack_mob@2x.jpg);
+  }
 }
 
-.motto-text {
-  margin-bottom: 30px;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.4;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--text-color-white);
+@media screen and (min-width: 768px) {
+  .motto {
+    max-width: 768px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero_dack_tab@1x.jpg);
+  }  
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+(min-resolution: 192dpi) and (min-width: 768px) {
+  .motto {
+    background-image: url(../../images/hero_dack_tab@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+
+  .motto {
+    max-width: 1600px;
+    padding: 200px 0;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero_dack_dt@1x.jpg);
+
+    &-text {
+      font-size: 44px;
+      line-height: 1.4;
+     }
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+(min-resolution: 192dpi) and (min-width: 1200px) {
+  .motto {
+    background-image: url(../../images/hero_dack_dt@2x.jpg);
+  }
 }

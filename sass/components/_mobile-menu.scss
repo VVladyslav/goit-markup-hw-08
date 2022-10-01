@@ -1,15 +1,16 @@
 @media screen and (max-width: 768px) {
 
   .mobile-menu {
-    // display: flex;
-    // flex-direction: column;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 25;
     width: 100vw;
     height: 100vh;
-    background-color: bisque;
+    background-color: #FFFFFF;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 
     &-close-button {
       padding-left: 0;
@@ -32,10 +33,17 @@
     }
   }
 
+.js-menu-container.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
   .mobile-menu__conteiner {
     position: relative;
     display: flex;
     flex-direction: column;
+    height: 100vh;
   }
 
   .mobile-menu-navigation {

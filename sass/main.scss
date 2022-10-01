@@ -10,12 +10,12 @@
 @import './components/header-logo';
 @import './components/navigation';
 @import './components/header-contacts';
-@import './components/btn-modal-window';
+@import './components/modal-window__open-button';
 @import './components/section-name';
 @import './components/footer-logo';
 @import './components/subscription-form';
 @import './components/back-drop';
-@import './components/modal-window-btn-close.scss';
+@import './components/modal-window-close-button.scss';
 @import './components/modal-window-form';
 
 @import './layout/footer';
@@ -23,7 +23,7 @@
 @import './layout/moto';
 @import './layout/directions';
 @import './layout/team';
-@import './layout/value-list';
+@import './layout/values';
 @import './layout/footer';
 @import './layout/portfolio-filter';
 @import './layout/portfilio-projects';
