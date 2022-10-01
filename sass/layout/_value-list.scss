@@ -1,0 +1,42 @@
+.values-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.values-list-item {
+  width: calc((100% - 30px*3)/4);
+  margin-right: 30px;
+}
+
+.values-list-item:last-child {
+  margin-right: 0;
+}
+
+.value-list-icon-box {
+  display: flex;
+  height: 120px;
+  background-color: #F5F4FA;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.value-name {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+
+  margin-bottom: 10px;
+}
+
+.value-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primery-text-color);
+}
