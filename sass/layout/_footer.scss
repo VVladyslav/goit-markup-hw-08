@@ -123,11 +123,15 @@ margin-left: 61px;
     margin-left: 70px;
     margin-top: 12px;
 
-    &:focus {
+    &__header {
+      text-align: left;
+    }
+
+    &__item-link:focus {
       background-color: var(--accent-color);
     }
 
-    &:hover {
+    &__item-link:hover {
       background-color: var(--accent-color);
     }
   }
