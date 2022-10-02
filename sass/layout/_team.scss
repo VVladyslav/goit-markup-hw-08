@@ -1,26 +1,20 @@
-.team {
+.team-section {
   background: #F5F4FA;
 }
 
-.team-list {
+.team-list__item {
   display: flex;
-}
-
-.team-member {
+  flex-direction: column;
   background: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-
-  width: calc((100% - 30px*3)/4);
-  margin-right: 30px;
+  width: 100%;
+  margin-bottom: 30px;
 }
 
-.team-member:last-child {
-  margin-right: 0;
-}
-
-.team-mamber-inf {
-  padding: 30px 0 16px 0;
+.team-member-img {
+  width: 100%;
+  margin-bottom: 30px;
 }
 
 .team-member-name {
@@ -41,7 +35,7 @@
   color: var(--primery-text-color);
 }
 
-.socisl-link-list {
+.social-links-list {
   display: flex;
   width: 206px;
   height: 44px;
@@ -50,7 +44,7 @@
   gap: 10px;
 }
 
-.social-link {
+.social-links-list__item-link {
   display: flex;
   width: 44px;
   height: 44px;
@@ -59,19 +53,48 @@
   align-items: center;
   color: var(--primery-text-color);
   transition: background-color var(--transition-duration) var(--transition-timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+
+  &:hover .social-links-list__item-icon,
+  &:focus .social-links-list__item-icon {
+    fill: var(--text-color-white);
+  }
 }
 
-.icon-social-link {
+.social-links-list__item-icon {
   fill: #AFB1B8;
   transition: fill var(--transition-duration) var(--transition-timing-function);
 }
 
-.social-link:hover,
-.social-link:focus {
-  background-color: var(--accent-color);
+@media screen and (min-width: 768px) {
+  
+.team-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__item {
+      width: calc((100% - 30px)/2);
+    }
+  }
 }
 
-.social-link:hover .icon-social-link,
-.social-link:focus .icon-social-link {
-  fill: var(--text-color-white);
+@media screen and (min-width: 1200px) {
+  
+  .team-list {
+    display: flex;
+   }
+
+  .team-list__item {
+    width: calc((100% - 30px*3)/4);
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
