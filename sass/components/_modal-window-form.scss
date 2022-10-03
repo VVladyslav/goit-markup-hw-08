@@ -2,7 +2,8 @@
   display: flex;
   flex-direction: column;
   position: absolute;
-  width: 450px;
+  width: calc(100% - 30px);
+  max-width: 450px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -135,6 +136,7 @@
   border: 2px solid #212121;
   border-radius: 2px;
   margin-right: 7px;
+  flex-shrink: 0;
 }
 
 .form__check-box-icon {
@@ -177,9 +179,15 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .modal-window {
+    width: 450px;  
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .modal-window {
-    width: 528px;
+    max-width: 528px;
   }
 
   .form__check-field {

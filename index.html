@@ -44,7 +44,7 @@
             </nav>
             <button class="mobile-menue-open-btn js-open-menu">
               <svg class="mobile-menue-open-btn__icon">
-                <use href="./images/icons.svg#icon-menu-burger">
+                <use href="./images/icons.svg#icon-menu-burger"></use>
               </svg>
             </button>
         </div>
@@ -100,11 +100,12 @@
     <main>
         <!--Герой-->
         <section class="motto">
-            <!-- <div class="conteiner"> -->
+            <div class="conteiner">
                 <h1 class="motto-text">Ефективні рішення для <br/> вашого бізнесу</h1>
                 <button data-modal-open class="modal-window__open-button" type="button">Замовити послугу</button>
-            <!-- </div> -->
+            </div>
         </section>
+        <!-- Цінності -->
         <section class="section values-section">
             <div class="conteiner">
                 <h2 class="values-hdr visually-hidden">Цінності</h2>
@@ -116,7 +117,7 @@
                             </svg>
                         </div>
                         <h3 class="value-name">УВАГА ДО ДЕТАЛЕЙ</h3>
-                        <p class="values-description">
+                        <p class="value-description">
                             Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
                         </p>
                     </li>
@@ -263,8 +264,8 @@
                     </li>
                     <li class="team-list__item">
                         <img class="team-member-img"
-                          srcset="./images/team3@2x.jpg" 
-                          src="./images/team3@1.jpg 2x" width="270" alt="фото сотрудника 1">
+                          srcset="./images/team3@2x.jpg"
+                          src="./images/team3@1.jpg" width="270" alt="фото сотрудника 1">
                         <h3 class="team-member-name">Микола Тарасов</h3>
                         <p class="team-member-position" lang="en">Marketing</p>
                         <ul class="social-links-list">
@@ -501,12 +502,18 @@
             <svg class="form__check-box">
               <use class="form__check-box-icon" href="./images/icons.svg#icon-check"></use>
             </svg>
+            <span>
             Погоджуюсь з розсилкою та приймаю&nbsp;<a class="form__submit-link" href=" ">Умови договору</a>
+            </span>
           </label>
           <button class="form__submit-button" type="submit">Відправити</button>
         </form>
       </div>
     </div>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+  integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+  crossorigin="anonymous">
+  </script>
   <script src="./js/mobile-menu.js"></script>
   <script src="./js/modal.js"></script>
 </body>
