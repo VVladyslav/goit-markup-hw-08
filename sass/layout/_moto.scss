@@ -5,7 +5,7 @@
   background-color: #2F303A;
   background-position: center top;
   background-size: cover;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_dack_mob@1x.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero_dack_mob@1x.jpg);
 
   &-text {
     font-weight: 900;
@@ -19,11 +19,11 @@
   }
 
 }
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 768px), (min-resolution: 192dpi) and (max-width: 768px) {
-  .motto {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_dack_mob@2x.jpg);
-  }
-}
+// @media screen and (min-device-pixel-ratio: 2) and (max-width: 768px), (min-resolution: 192dpi) and (max-width: 768px) {
+//   .motto {
+//     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero_dack_mob@2x.jpg);
+//   }
+// }
 
 @media screen and (min-width: 768px) {
   .motto {
@@ -44,7 +44,7 @@
   .motto {
     max-width: 1600px;
     padding: 200px 0;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_dack_dt@1x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero_dack_dt@1x.jpg);
 
     &-text {
       font-size: 44px;
@@ -56,6 +56,6 @@
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
 (min-resolution: 192dpi) and (min-width: 1200px) {
   .motto {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_dack_dt@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero_dack_dt@2x.jpg);
   }
 }
