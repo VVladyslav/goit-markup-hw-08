@@ -4,7 +4,7 @@
   padding: 118px 0;
   background-color: #2F303A;
   background-position: center top;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero_dack_mob@1x.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_dack_mob@1x.jpg);
 
   &-text {
     font-weight: 900;
@@ -20,21 +20,21 @@
 }
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 768px), (min-resolution: 192dpi) and (max-width: 768px) {
   .motto {
-    background-image: url(../../images/hero_dack_mob@2x.jpg);
+    background-image: url(../images/hero_dack_mob@2x.jpg);
   }
 }
 
 @media screen and (min-width: 768px) {
   .motto {
     max-width: 768px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero_dack_tab@1x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_dack_tab@1x.jpg);
   }  
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
 (min-resolution: 192dpi) and (min-width: 768px) {
   .motto {
-    background-image: url(../../images/hero_dack_tab@2x.jpg);
+    background-image: url(../images/hero_dack_tab@2x.jpg);
   }
 }
 
